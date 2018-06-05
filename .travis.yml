@@ -15,6 +15,8 @@ install:
   - pip install -r requirements.txt
   - pip --version
 
+before_script:
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)/src/simcore_sdk
 script:
   - pytest
 

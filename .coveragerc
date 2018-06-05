@@ -1,0 +1,16 @@
+[paths]
+source =
+   src/simcore_sdk
+   */site-packages/simcore_sdk
+
+[run]
+branch = true
+source =
+    simcore_sdk
+    tests
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*

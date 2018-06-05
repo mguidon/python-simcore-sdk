@@ -1,6 +1,6 @@
 
-from simcore_sdk import main
+from simcore_sdk.foo import foo
 
 
 def test_main():
-    pass
+    assert foo() == "foo"

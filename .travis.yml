@@ -16,7 +16,7 @@ install:
   - pip --version
 
 before_script:
-  - export PYTHONPATH=$PYTHONPATH:$(TRAVIS_BUILD_DIR)/src/simcore_sdk
+  - export PYTHONPATH=$PYTHONPATH:$(TRAVIS_BUILD_DIR)/src
 script:
   - pytest
 
